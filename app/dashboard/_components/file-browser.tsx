@@ -109,7 +109,7 @@ export function FileBrowser({
             <Select
               value={type}
               onValueChange={(newType) => {
-                // @ts-ignore
+                    {/* @ts-expect-error - DataTable types may not match modifiedFiles structure */}
                 setType(newType as Doc<"files">["type"] | "all");
               }}
             >
@@ -141,7 +141,7 @@ export function FileBrowser({
           </div>
         </TabsContent>
         <TabsContent value="table">
-          {/* @ts-ignore */}
+          {/* @ts-expect-error - DataTable types may not match modifiedFiles structure */}
           <DataTable columns={columns} data={modifiedFiles} />
         </TabsContent>
       </Tabs>

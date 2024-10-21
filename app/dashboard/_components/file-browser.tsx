@@ -109,7 +109,6 @@ export function FileBrowser({
             <Select
               value={type}
               onValueChange={(newType) => {
-                    {/* @ts-expect-error - DataTable types may not match modifiedFiles structure */}
                 setType(newType as Doc<"files">["type"] | "all");
               }}
             >

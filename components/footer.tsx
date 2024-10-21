@@ -3,7 +3,7 @@ import React from "react";
 
 export function Footer() {
   return (
-    <div className="bg-gray-100 mt-12 py-8 w-full">
+    <footer className="bg-gray-100 py-8 w-full fixed bottom-0 left-0 right-0">
       <div className="container mx-auto px-4">
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
           <div className="text-xl font-bold mb-4 sm:mb-0">FileDrive</div>
@@ -23,6 +23,6 @@ export function Footer() {
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }

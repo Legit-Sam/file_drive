@@ -93,37 +93,37 @@ export function FileBrowser({
     })) ?? [];
 
   return (
-    <div>
-      <div className={`flex ${isMobile ? 'flex-col' : 'justify-between'} items-center mb-8 gap-4`}>
+    <div className="w-full max-w-full">
+      <div className="flex flex-col items-center mb-8 gap-4 w-full">
         <h1 className="text-4xl font-bold">{title}</h1>
 
-        <div className={`flex ${isMobile ? 'flex-col w-full' : 'items-center'} gap-4`}>
+        <div className="flex flex-col w-full gap-4">
           <SearchBar query={query} setQuery={setQuery} />
           <UploadButton />
         </div>
       </div>
 
-      <Tabs defaultValue="grid">
-        <div className={`flex ${isMobile ? 'flex-col' : 'justify-between'} items-center gap-4 mb-4`}>
-          <TabsList className="mb-2">
-            <TabsTrigger value="grid" className="flex gap-2 items-center">
+      <Tabs defaultValue="grid" className="w-full">
+        <div className="flex flex-col items-center gap-4 mb-4 w-full">
+          <TabsList className="mb-2 w-full">
+            <TabsTrigger value="grid" className="flex gap-2 items-center flex-1">
               <GridIcon />
               Grid
             </TabsTrigger>
-            <TabsTrigger value="table" className="flex gap-2 items-center">
+            <TabsTrigger value="table" className="flex gap-2 items-center flex-1">
               <RowsIcon /> Table
             </TabsTrigger>
           </TabsList>
 
-          <div className="flex gap-2 items-center">
-            <Label htmlFor="type-select">Type Filter</Label>
+          <div className="flex gap-2 items-center w-full">
+            <Label htmlFor="type-select" className="whitespace-nowrap">Type Filter</Label>
             <Select
               value={type}
               onValueChange={(newType) => {
                 setType(newType as Doc<"files">["type"] | "all");
               }}
             >
-              <SelectTrigger id="type-select" className="w-[180px]">
+              <SelectTrigger id="type-select" className="w-full">
                 <SelectValue />
               </SelectTrigger>
               <SelectContent>
@@ -143,15 +143,15 @@ export function FileBrowser({
           </div>
         )}
 
-        <TabsContent value="grid">
-          <div className={`grid ${isMobile ? 'grid-cols-1' : 'grid-cols-2 md:grid-cols-3'} gap-4`}>
+        <TabsContent value="grid" className="w-full">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full">
             {modifiedFiles?.map((file) => {
               return <FileCard key={file._id} file={file} />;
             })}
           </div>
         </TabsContent>
-        <TabsContent value="table">
-          <div className="overflow-x-auto">
+        <TabsContent value="table" className="w-full">
+          <div className="w-full">
             {/* @ts-expect-error - DataTable types may not match modifiedFiles structure */}
             <DataTable columns={columns} data={modifiedFiles} />
           </div>

@@ -35,7 +35,7 @@ const TermsOfService = () => {
             <li>Violating any applicable laws or regulations</li>
             <li>Infringing on the intellectual property rights of others</li>
             <li>Uploading malicious software or content</li>
-            <li>Attempting to gain unauthorized access to other users' accounts</li>
+            <li>Attempting to gain unauthorized access to other users&apos; accounts</li>
             <li>Using the service for any illegal or unauthorized purpose</li>
           </ul>
         </section>
@@ -50,7 +50,7 @@ const TermsOfService = () => {
         <section>
           <h2 className="text-xl md:text-2xl font-semibold mb-3">6. Disclaimer of Warranties</h2>
           <p>
-            FileDrive is provided "as is" without any warranties, expressed or implied. We do not warrant that the service will be uninterrupted or error-free.
+            FileDrive is provided &quot;as is&quot; without any warranties, expressed or implied. We do not warrant that the service will be uninterrupted or error-free.
           </p>
         </section>
 

@@ -76,14 +76,14 @@ const PrivacyPolicy = () => {
         <section>
           <h2 className="text-xl md:text-2xl font-semibold mb-3">6. Updates to This Policy</h2>
           <p>
-            We may update this Privacy Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. We will notify you of any material changes by posting the new Privacy Policy on this page and updating the "Last updated" date. We encourage you to review this Privacy Policy periodically for any changes.
+            We may update this Privacy Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. We will notify you of any material changes by posting the new Privacy Policy on this page and updating the &quot;Last updated&quot; date. We encourage you to review this Privacy Policy periodically for any changes.
           </p>
         </section>
 
         <section>
           <h2 className="text-xl md:text-2xl font-semibold mb-3">7. Contact Us</h2>
           <p>
-            If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please don't hesitate to contact us at:
+            If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please don&apos;t hesitate to contact us at:
           </p>
           <p className="mt-2">
             FileDrive Privacy Team<br />

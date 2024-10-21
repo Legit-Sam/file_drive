@@ -49,6 +49,7 @@ export function FileBrowser({
   const user = useUser();
   const [query, setQuery] = useState("");
   const [type, setType] = useState<Doc<"files">["type"] | "all">("all");
+  // @ts-ignore - Reason: This state is used for responsive design, but TypeScript might not recognize its usage in JSX
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {

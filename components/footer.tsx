@@ -3,7 +3,7 @@ import React from "react";
 
 export function Footer() {
   return (
-    <footer className="bg-gray-100 py-8 w-full fixed bottom-0 left-0 right-0">
+    <footer className="xl:absolute bottom-0 right-0 left-0 bg-gray-200 md:bg-gray-200 py-8 w-full">
       <div className="container mx-auto px-4">
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
           <div className="text-xl font-bold mb-4 sm:mb-0">FileDrive</div>

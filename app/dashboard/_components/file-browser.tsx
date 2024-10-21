@@ -109,7 +109,8 @@ export function FileBrowser({
             <Select
               value={type}
               onValueChange={(newType) => {
-                setType(newType as any);
+                // @ts-ignore
+                setType(newType as Doc<"files">["type"] | "all");
               }}
             >
               <SelectTrigger id="type-select" className="w-[180px]">
@@ -140,7 +141,8 @@ export function FileBrowser({
           </div>
         </TabsContent>
         <TabsContent value="table">
-          <DataTable columns={columns} data={modifiedFiles as any} />
+          {/* @ts-ignore */}
+          <DataTable columns={columns} data={modifiedFiles} />
         </TabsContent>
       </Tabs>
 

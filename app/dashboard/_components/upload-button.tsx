@@ -89,7 +89,8 @@ export function UploadButton() {
         title: "File Uploaded",
         description: "Now everyone can view your file",
       });
-    } catch (err) {
+    } catch (error) {
+      console.error(error);
       toast({
         variant: "destructive",
         title: "Something went wrong",

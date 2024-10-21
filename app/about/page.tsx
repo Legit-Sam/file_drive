@@ -20,7 +20,7 @@ const About = () => {
             FileDrive is the easiest way to upload and share files with your company. Our mission is to simplify file management and collaboration for businesses of all sizes.
           </p>
           <p className="text-lg">
-            Founded in 2023, we&apos;ve quickly become a trusted partner for thousands of organizations worldwide. Our platform combines powerful features with an intuitive interface, making file sharing and storage effortless.
+            Founded in 2024, we&apos;ve quickly become a trusted partner for thousands of organizations worldwide. Our platform combines powerful features with an intuitive interface, making file sharing and storage effortless.
           </p>
           <p className="text-lg">
             At FileDrive, we prioritize security, reliability, and user experience. Our team of dedicated professionals works tirelessly to ensure your data is safe and accessible whenever you need it.

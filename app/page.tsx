@@ -21,11 +21,12 @@ export default function LandingPage() {
         <div className="mx-auto max-w-2xl py-8">
           <div className="text-center">
             <Image
-              src="/logo.png"
+              src="/logo2.webp"
               width="200"
               height="200"
               alt="file drive logo"
-              className="inline-block mb-8"
+              className="inline-block mb-8 rounded-full w-48 h-48 object-cover animate-bounce"
+              style={{ animation: 'bounce 2s infinite' }}
             />
 
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">

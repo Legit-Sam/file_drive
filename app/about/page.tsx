@@ -8,11 +8,11 @@ const About = () => {
       <div className="flex flex-col md:flex-row items-center justify-between gap-8">
         <div className="md:w-1/2">
           <Image
-            src="/logo.png"
+            src="/logo2.webp"
             width={300}
             height={300}
             alt="FileDrive logo"
-            className="rounded-lg shadow-lg"
+            className="rounded-full shadow-lg w-full h-full object-cover"
           />
         </div>
         <div className="md:w-1/2 space-y-4">

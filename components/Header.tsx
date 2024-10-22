@@ -35,7 +35,7 @@ export function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex gap-2 items-center text-xl text-black">
-            <Image src="/logo.png" width="50" height="50" alt="file drive logo" />
+            <Image src="/logo2.webp" width="50" height="50" alt="file drive logo" className="rounded-full w-12 h-12 object-cover" />
             {!isMobile && "FileDrive"}
           </Link>
 

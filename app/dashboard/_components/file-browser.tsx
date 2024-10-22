@@ -94,7 +94,7 @@ export function FileBrowser({
 
   return (
     <div className="w-full max-w-full">
-      <div className="flex flex-col items-center mb-8 gap-4 w-full">
+      <div className="flex flex-col items-center mb-6 gap-4 w-full">
         <h1 className="text-4xl font-bold">{title}</h1>
 
         <div className="flex flex-col w-full gap-4">
@@ -144,7 +144,7 @@ export function FileBrowser({
         )}
 
         <TabsContent value="grid" className="w-full">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mb-80 gap-4 w-full">
             {modifiedFiles?.map((file) => {
               return <FileCard key={file._id} file={file} />;
             })}
